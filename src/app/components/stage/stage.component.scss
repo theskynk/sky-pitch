@@ -1,0 +1,33 @@
+$stage-height: 600px;
+
+.stage-container {
+  background-image: url("../../../../assets/wedding-stage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: $stage-height;
+  text-shadow: 2px 2px 4px black;
+}
+
+.stage-text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 56px;
+  text-align: center;
+  color: white;
+}
+
+.stage-text {
+  margin: 0;
+
+  &:last-child {
+    margin-bottom: 48px
+  }
+}

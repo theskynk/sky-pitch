@@ -1,0 +1,31 @@
+<div class="agenda-container">
+  <div class="agenda-headings">
+    <h2 class="agenda-title ">
+      {{ agendaTitle }}
+    </h2>
+    <h3 class="agenda-date ">
+      {{ date }}
+    </h3>
+  </div>
+
+  <div class="agenda-detail-container">
+    <div class="agenda-detail-section">
+      <h4 class="agenda-section-heading">
+        Morning Ceremony
+      </h4>
+      <div class="agenda-details" *ngFor="let step of ceremonies.morning">
+        <div class="agenda-detail-time">{{step.time}}</div>
+        <div class="agenda-detail-description">{{step.description}}</div>
+      </div>
+    </div>
+    <div class="agenda-detail-section">
+      <h4 class="agenda-section-heading">
+        Evening Ceremony
+      </h4>
+      <div class="agenda-details" *ngFor="let step of ceremonies.evening">
+        <div class="agenda-detail-time">{{step.time}}</div>
+        <div class="agenda-detail-description">{{step.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

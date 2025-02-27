@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:ghp": "ng deploy --base-href=/sky-pitch/"
   },
   "private": true,
   "dependencies": {
