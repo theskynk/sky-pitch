@@ -1,0 +1,31 @@
+<div class="countdown-container">
+  <!-- <h2 class="countdown-title">
+    {{ countdownTitle }}
+  </h2> -->
+  <div class="countdown-timer">
+    <div class="countdown-timer-section-1">
+      <div class="countdown-timer-section" *ngIf="months > 0">
+        <div class="countdown-timer-section-number" ngif>{{ months }}</div>
+        <div class="countdown-timer-section-label">Months</div>
+      </div>
+      <div class="countdown-timer-section" *ngIf="months > 0 || days > 0">
+        <div class="countdown-timer-section-number">{{ days }}</div>
+        <div class="countdown-timer-section-label">Days</div>
+      </div>
+    </div>
+    <div class="countdown-timer-section-2">
+      <div class="countdown-timer-section">
+        <div class="countdown-timer-section-number">{{ hours }}</div>
+        <div class="countdown-timer-section-label">Hours</div>
+      </div>
+      <div class="countdown-timer-section">
+        <div class="countdown-timer-section-number">{{ minutes }}</div>
+        <div class="countdown-timer-section-label">Minutes</div>
+      </div>
+      <div class="countdown-timer-section">
+        <div class="countdown-timer-section-number">{{ seconds }}</div>
+        <div class="countdown-timer-section-label">Seconds</div>
+      </div>
+    </div>
+  </div>
+</div>
