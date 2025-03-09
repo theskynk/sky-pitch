@@ -1,7 +1,71 @@
 <div class="rsvp-container">
-  <!-- <div class="rsvp-text">RSVP</div> -->
   <p class="rsvp-text">{{ rsvpText }}</p>
-  <button class="rsvp-button" (click)="gotoRsvp()">
-    {{rsvpButtonText}}
+
+  <p class="rsvp-subtext">
+    <span *ngIf="formSubmitSuccess">Thank you!</span>
+    {{ rsvpSubtext }}
+  </p>
+
+  <p class="rsvp-subtext rsvp-form-error-message" *ngIf="formError">
+    {{ formErrorMessage }}
+  </p>
+
+  <div class="rsvp-form-container" *ngIf="!formSubmitSuccess">
+    <div class="rsvp-form">
+      <div class="rsvp-form-group">
+        <label for="name">Your name*</label>
+        <input
+          id="name"
+          type="text"
+          class="rsvp-text-input"
+          [formControl]="name"
+          required
+        />
+      </div>
+      <div class="rsvp-form-group">
+        <label for="attending">Are you attending?*</label>
+        <div class="rsvp-radio-group">
+          <div class="rsvp-radio-item">
+            <input
+              type="radio"
+              id="yes"
+              name="attending"
+              value="yes"
+              [formControl]="attending"
+              required
+            />
+            <label for="yes">Yes</label>
+          </div>
+          <div class="rsvp-radio-item">
+            <input
+              type="radio"
+              id="no"
+              name="attending"
+              value="no"
+              [formControl]="attending"
+              required
+            />
+            <label for="no">No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="rsvp-form-group" *ngIf="attending.value === 'yes'">
+        <label for="guests">Number of guests you'll bring</label>
+        <input
+          id="guests"
+          class="rsvp-text-input"
+          type="number"
+          [formControl]="guests"
+          required="{isAttending}"
+          min="0"
+        />
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <button class="rsvp-button" (click)="submitRsvp()" *ngIf="!formSubmitSuccess">
+    {{ rsvpButtonText }}
   </button>
 </div>
