@@ -13,7 +13,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 32px;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -38,3 +38,97 @@
   margin-top: 0;
 }
 
+.rsvp-subtext {
+  color: var(--pallette-500);
+
+  font-family: "Playwrite IT Moderna", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.rsvp-form:not(input) {
+  color: var(--pallette-500);
+
+  font-family: "Playwrite IT Moderna", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+
+  margin-top: 0;
+}
+
+.rsvp-form-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  @media screen and (max-width: 703px) {
+    grid-template-columns: 24px auto 24px;
+
+  }
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  grid-column-start: 2;
+}
+
+.rsvp-form input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--pallette-500);
+}
+
+.rsvp-form input:focus {
+  outline: none;
+  border: 1px solid var(--pallette-400);
+}
+
+.rsvp-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.rsvp-radio-group {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.rsvp-radio-item,
+.rsvp-radio-item input,
+.rsvp-radio-item label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+}
+
+.rsvp-radio-item label {
+  padding-left: 16px;
+}
+
+input[type="radio" i] {
+  width: 20px;
+  accent-color: var(--pallette-500);
+}
+
+.rsvp-guest-hint {
+  margin-bottom: 0;
+}
+
+.rsvp-form-error-message {
+  color: red
+}
