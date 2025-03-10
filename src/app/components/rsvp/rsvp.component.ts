@@ -55,7 +55,7 @@ export class RsvpComponent {
     };
 
     this.http
-      .post('/api/weddingGuest', rsvpData, { headers })
+      .post('https://jals6vahs6.execute-api.ap-southeast-1.amazonaws.com/default/weddingGuest', rsvpData, { headers })
 
       .subscribe({
         next: (response) => {
