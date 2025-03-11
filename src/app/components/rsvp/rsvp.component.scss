@@ -71,7 +71,6 @@
 
   @media screen and (max-width: 703px) {
     grid-template-columns: 24px auto 24px;
-
   }
 }
 
@@ -120,9 +119,22 @@
   padding-left: 16px;
 }
 
-input[type="radio" i] {
-  width: 20px;
+.rsvp-form input[type="radio" i] {
+  align-self: center;
   accent-color: var(--pallette-500);
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: white;
+  cursor: pointer;
+
+  &:checked {
+    background-color: var(--pallette-500);
+    outline: 4px solid white;
+    outline-offset: -4px;
+  }
 }
 
 .rsvp-guest-hint {
@@ -130,5 +142,5 @@ input[type="radio" i] {
 }
 
 .rsvp-form-error-message {
-  color: red
+  color: red;
 }
