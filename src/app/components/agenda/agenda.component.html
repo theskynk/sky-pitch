@@ -1,16 +1,19 @@
+<div class="couple-names-container">
+  <p class="parents text-th">นายสมพงษ์ - นางปรางทิพย์ เปาจีน</p>
+  <p class="parents text-th">นายนิทัศน์ - นางสุขสมบูรณ์ ขันกสิกรรม</p>
+  <h2 class="agenda-couple-names text-th">Pitchaya</h2>
+  <h2 class="agenda-couple-names text-th">พิชญา</h2>
+  <p class="text-th amp">&</p>
+  <h2 class="agenda-couple-names text-th">Nawaphat</h2>
+  <h2 class="agenda-couple-names text-th">นวภัทร</h2>
+</div>
 <div class="agenda-container">
   <div class="agenda-headings">
-    <h2 class="agenda-couple-names">
-      <span>Nawaphat</span>
-      <span>&</span>
-      <span>Pitchaya</span>
-    </h2>
     <h2 class="agenda-title">
       {{ agendaTitle }}
     </h2>
-    <h3 class="agenda-date">
-      {{ date }}
-    </h3>
+    <h3 class="agenda-date">25 October 2025</h3>
+    <h3 class="agenda-date text-th">25 ตุลาคม 2568</h3>
   </div>
 
   <div class="agenda-detail-container">
@@ -26,8 +29,10 @@
     <div class="agenda-detail-section">
       <h4 class="agenda-section-heading">Evening Ceremony</h4>
       <div class="agenda-details" *ngFor="let step of ceremonies.evening">
-        <div class="agenda-detail-time">{{ step.time }}</div>
-        <div class="agenda-detail-description">{{ step.description }}</div>
+        <div class="agenda-detail-time text-th">{{ step.time }}</div>
+        <div class="agenda-detail-description text-th">
+          {{ step.description }}
+        </div>
       </div>
     </div>
   </div>

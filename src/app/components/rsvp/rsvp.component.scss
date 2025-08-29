@@ -2,6 +2,7 @@
   padding: 32px 0;
   text-align: center;
   background-color: var(--pallette-200);
+  color: var(--pallette-500);
 }
 
 .rsvp-button {
@@ -29,7 +30,7 @@
 .rsvp-text {
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -41,7 +42,7 @@
 .rsvp-subtext {
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -56,7 +57,7 @@
 .rsvp-form:not(input) {
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
