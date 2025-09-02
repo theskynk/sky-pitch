@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class StageComponent {
   stageText = "You're invited!";
-  stageSubtext = "Sky & Pitch's Wedding";
+  stageSubtext = "Pitch & Sky's Wedding";
 }

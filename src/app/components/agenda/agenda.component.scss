@@ -1,6 +1,6 @@
 .agenda-container {
   background-color: var(--pallette-100);
-  padding: 48px;
+  padding: 32px;
 
   @media screen and (max-width: 703px) {
     padding: 32px 24px;
@@ -12,7 +12,9 @@
   text-align: center;
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
+  font-family: "Playpen Sans Thai", sans-serif;
+
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -58,19 +60,52 @@
 
 .agenda-detail-time {
   font-weight: 600;
+  font-size: 18px;
 }
 
 .agenda-detail-description {
   margin-left: 1em;
-  font-family: "Noto Sans Thai", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+
+  // font-family: "Noto Sans Thai", serif;
+  // font-optical-sizing: auto;
+  // font-weight: 400;
+  // font-style: normal;F
+  // font-variation-settings: "wdth" 100;
+  font-size: 18px;
 }
 
 .agenda-detail-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.parents {
+  font-size: 20px;
+  color: var(--pallette-500);
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.amp {
+  font-size: 32px;
+}
+
+.couple-names-container {
+  // background-color: var(--pallette-500);
+  color: white;
+  padding: 24px;
+  text-align: center;
+
+  background-image: url("../../../../public/assets/1-212.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position:  50% 70%;
+
+  height: auto;
+  text-shadow: 4px 4px 10px #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }

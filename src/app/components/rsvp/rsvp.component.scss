@@ -1,7 +1,10 @@
+@use 'sass:color';
+
 .rsvp-container {
   padding: 32px 0;
   text-align: center;
   background-color: var(--pallette-200);
+  color: var(--pallette-500);
 }
 
 .rsvp-button {
@@ -19,17 +22,19 @@
 }
 
 .rsvp-button:hover {
-  background-color: var(--pallette-400);
+  // background-color: var(--pallette-400);
+  background-color: color.adjust(#a53a2a, $lightness: -10%);
 }
 
 .rsvp-button:active {
-  background-color: var(--pallette-300);
+  // background-color: var(--pallette-300);
+  background-color: color.adjust(#a53a2a, $lightness: -20%);
 }
 
 .rsvp-text {
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -41,7 +46,7 @@
 .rsvp-subtext {
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -56,7 +61,7 @@
 .rsvp-form:not(input) {
   color: var(--pallette-500);
 
-  font-family: "Playwrite IT Moderna", serif;
+  // font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;

@@ -4,6 +4,8 @@
   <p class="rsvp-subtext">
     <span *ngIf="formSubmitSuccess">Thank you!</span>
     {{ rsvpSubtext }}
+    <br />
+    <span *ngIf="formSubmitSuccess">เราได้รับการตอบรับของคุณแล้ว</span>
   </p>
 
   <p class="rsvp-subtext rsvp-form-error-message" *ngIf="formError">
@@ -13,7 +15,7 @@
   <div class="rsvp-form-container" *ngIf="!formSubmitSuccess">
     <div class="rsvp-form">
       <div class="rsvp-form-group">
-        <label for="name">Your name*</label>
+        <label for="name">Your name (ชื่อ)*</label>
         <input
           id="name"
           type="text"
@@ -23,7 +25,11 @@
         />
       </div>
       <div class="rsvp-form-group">
-        <label for="attending">Are you attending?*</label>
+        <label for="attending">
+          <span>Are you attending?</span>
+          <br />
+          <span>(คุณจะมาร่วมงานหรือไม่?) *</span>
+        </label>
         <div class="rsvp-radio-group">
           <div class="rsvp-radio-item">
             <input
@@ -34,7 +40,7 @@
               [formControl]="attending"
               required
             />
-            <label for="yes">Yes</label>
+            <label for="yes">Yes (ใช่)</label>
           </div>
           <div class="rsvp-radio-item">
             <input
@@ -45,13 +51,17 @@
               [formControl]="attending"
               required
             />
-            <label for="no">No</label>
+            <label for="no">No (ไม่มา)</label>
           </div>
         </div>
       </div>
 
       <div class="rsvp-form-group" *ngIf="attending.value === 'yes'">
-        <label for="guests">Number of guests you'll bring</label>
+        <label for="guests">
+          <span> Number of guests you'll bring </span>
+          <br />
+          <span>(จำนวนแขกที่คุณจะพามา)</span>
+        </label>
         <input
           id="guests"
           class="rsvp-text-input"
@@ -60,7 +70,6 @@
           required="{isAttending}"
           min="0"
         />
-        <span></span>
       </div>
     </div>
   </div>
@@ -68,4 +77,7 @@
   <button class="rsvp-button" (click)="submitRsvp()" *ngIf="!formSubmitSuccess">
     {{ rsvpButtonText }}
   </button>
+
+  <p>*If you need a place to stay, please tell us (number of rooms is limited)</p>
+  <p>*หากต้องการที่พัก โปรดแจ้ง (มีจำนวนจำกัด)</p>
 </div>

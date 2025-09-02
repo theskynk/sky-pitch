@@ -4,19 +4,29 @@
   --pallette-200: #deb887;
   --pallette-300: #f4a460;
   --pallette-400: #d2691e;
-  --pallette-500: #a53a2a;
+  --pallette-500: #a52a2a;
+  --pallette-secondary-100: #fff5ee;
+  --pallette-secondary-200: #f5deb3;
+  --pallette-secondary-300: #d2b48c;
+  --pallette-secondary-400: #a0522d;
+  --pallette-secondary-500: #8b0000;
 }
 
 html {
-
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 body {
   margin: 0;
+  // font-family: "Playwrite IT Moderna", serif;
+  font-family: "Playpen Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.text-th {
+  font-family: "Playpen Sans Thai", sans-serif;
 }

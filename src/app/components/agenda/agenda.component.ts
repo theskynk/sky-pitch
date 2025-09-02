@@ -48,24 +48,20 @@ export class AgendaComponent {
     ],
     evening: [
       {
-        time: '18:00',
-        description: 'ลงทะเบียน',
+        time: '17:30',
+        description: 'ลงทะเบียน / Register',
       },
       {
-        time: '19:00',
-        description: 'รับประทานอาหาร',
+        time: '18:30',
+        description: 'เปิดตัวบ่าวสาว / Couple Entrance',
       },
       {
-        time: '20:00',
-        description: 'เบิกตัวบ่าวสาว',
-      },
-      {
-        time: '21:00',
-        description: 'ตัดเค้ก',
+        time: '19:30',
+        description: 'รินแชมเปญ / Champagne',
       },
       {
         time: '21:30',
-        description: 'After Party',
+        description: 'ปาร์ตี้! / After Party!',
       },
 
     ],

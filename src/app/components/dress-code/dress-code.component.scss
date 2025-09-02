@@ -1,0 +1,40 @@
+.dress-code-container {
+  background-color: var(--pallette-200);
+  padding: 32px 0;
+  color: var(--pallette-500);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dress-code-heading {
+  font-weight: 600;
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.dress-code-description {
+  font-size: 32px;
+}
+
+.color-set-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.color-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}

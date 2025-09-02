@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class RsvpComponent {
   rsvpLocation = 'https://forms.gle/fvLF4zxUaETUbJJd9';
-  rsvpText = 'Join us for a night of celebration!';
+  rsvpText = 'Join us for the night of celebration!';
   rsvpSubtext = 'Give us your response!';
   rsvpButtonText = 'Submit';
   formSubmitSuccess = false;
